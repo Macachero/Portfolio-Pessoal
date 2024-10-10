@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.titulo-destaque {
+    color: aqua;
+}
+
+.apresentacao {
+    padding: 5% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-family: "Krona One";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+
+}
+
+.apresentacao__conteudo__texto { 
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.divisao__botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 378px;
+    padding: 16px;  
+}
+
+.escrita__redes {
+    font-family: "Krona One";
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.botoes {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 21.87rem;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.rodape {
+    background: #22D4FD;
+    font-family: Montserrat;
+    color: rgb(0, 0, 0);
+    padding: 1%;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
+.botoes:hover {
+    background-color: rgb(27, 27, 27);
+    border-color: purple;
+}
+
+.cabecalho {
+    padding: 2% 0 0 50%;
+
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link {
+    font-family: Montserrat;
+    font-size: 1.06rem;
+    text-decoration:none;
+}
+
+.foto {
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 5% ;
+    }
+    .cabecalho {
+        padding: 10%;
+        
+    }
+    .menu {
+       justify-content: center;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
